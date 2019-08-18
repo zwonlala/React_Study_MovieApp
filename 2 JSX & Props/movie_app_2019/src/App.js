@@ -1,11 +1,15 @@
 import React from 'react';
-import Jiwon from './Jiwon';
-
+function Food({fav}) {
+  return <h4>I like {fav}</h4>;
+}
 function App() {
   return (
     <div className="App">
       <h1>this is react example</h1>
-      <Jiwon />
+      <Food fav="kimchi"/>
+      <Food fav="pizza"/>
+      <Food fav="chicken"/>
+      <Food fav="ramen"/>
 
     </div>
   );
